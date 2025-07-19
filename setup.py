@@ -6,7 +6,8 @@ def get_requirements(file_path: str)-> List[str]:
     requirements = []
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
-        requirements = [req.strip() for req in requirements if req.strip() and not req.strip().startswith('-e')]        
+        requirements = [req.strip() for req in requirements 
+                        if req.strip() and not req.strip().startswith('-e')]        
         
     return requirements
         
