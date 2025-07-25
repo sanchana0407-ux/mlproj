@@ -1,5 +1,7 @@
-import sys 
-import logging
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.logger import logging
+
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()
@@ -18,6 +20,5 @@ class CustomeException(Exception):
     def __str__(self):
         return self.error_message
     
-
 
 
