@@ -6,5 +6,6 @@
  xgboost
  catboost
  dataclasses
+ dill
  #-e .
  
