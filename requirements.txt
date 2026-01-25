@@ -7,5 +7,6 @@
  catboost
  dataclasses
  dill
+ Flask
  #-e .
  
